@@ -36,6 +36,17 @@ from the semantic palette.
 The theme uses explicit static face definitions. It does not discover or
 classify faces at run time and does not install refresh hooks or timers.
 
+## Supported third-party packages
+
+- Magit, magit-section, git-commit, git-rebase, and Transient
+- diff-hl
+- Vertico, Consult, Marginalia, Corfu, Cape, Embark, Orderless, and Tempel
+
+Package faces follow the same palette roles as the rest of Osmanthus. Added
+content uses water blue instead of green, removed content uses deep red, and
+changed or selected content uses gold and yellow. Completion matches use gold,
+while source types and secondary distinctions use navy, violet, and pink.
+
 ## License
 
 See [LICENSE](LICENSE).
