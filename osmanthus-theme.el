@@ -251,7 +251,7 @@
    ;; Built-in: dired.el.gz
    `(dired-broken-symlink ((t (:foreground ,fg-dim))))
    `(dired-directory ((t (:foreground ,navy :weight semibold))))
-   `(dired-flagged ((t (:foreground ,fg-main))))
+   `(dired-flagged ((t (:foreground ,red-dark :background ,bg-red :weight bold :extend t))))
    `(dired-header ((t (:foreground ,navy :weight semibold))))
    `(dired-ignored ((t (:foreground ,fg-dim))))
    `(dired-mark ((t (:foreground ,gold :weight semibold))))
@@ -491,10 +491,10 @@
    `(show-paren-match-expression ((t (:foreground ,violet :background ,bg-lavender :weight bold))))
    `(show-paren-mismatch ((t (:foreground ,bg-main :background ,red-dark :weight bold))))
    `(success ((t (:foreground ,water-dark :weight semibold))))
-   `(tab-bar ((t (:foreground ,navy-dark :background ,mode-line :weight semibold))))
+   `(tab-bar ((t (:foreground ,fg-dim :background ,mode-line-dim))))
    `(tab-line ((t (:foreground ,navy :background ,bg-dim :weight semibold))))
    `(tool-bar ((t (:foreground ,fg-main :background ,bg-dim))))
-   `(trailing-whitespace ((t (:foreground ,red-dark))))
+   `(trailing-whitespace ((t (:foreground ,red-dark :background ,bg-red))))
    `(tty-menu-disabled-face ((t (:foreground ,fg-main :background ,bg-dim))))
    `(tty-menu-enabled-face ((t (:foreground ,fg-main :background ,bg-dim))))
    `(tty-menu-selected-face ((t (:foreground ,fg-main :background ,bg-dim))))
@@ -1329,11 +1329,14 @@
    `(strokes-char ((t (:foreground ,fg-main))))
 
    ;; Built-in: tab-bar.el.gz
-   `(tab-bar-tab ((t (:foreground ,navy-dark :background ,mode-line :weight semibold))))
-   `(tab-bar-tab-group-current ((t (:foreground ,navy-dark :background ,mode-line :weight semibold))))
+   `(tab-bar-tab ((t (:foreground ,navy-dark :background ,mode-line
+                                  :box (:line-width 2 :color ,gold-dark) :weight bold))))
+   `(tab-bar-tab-group-current ((t (:foreground ,navy-dark :background ,mode-line
+                                                :box (:line-width 2 :color ,gold-dark) :weight bold))))
    `(tab-bar-tab-group-inactive ((t (:foreground ,fg-dim :background ,mode-line-dim))))
    `(tab-bar-tab-inactive ((t (:foreground ,fg-dim :background ,mode-line-dim))))
-   `(tab-bar-tab-ungrouped ((t (:foreground ,navy-dark :background ,mode-line :weight semibold))))
+   `(tab-bar-tab-ungrouped ((t (:foreground ,navy-dark :background ,mode-line
+                                            :box (:line-width 2 :color ,gold-dark) :weight bold))))
 
    ;; Built-in: tab-line.el.gz
    `(tab-line-close-highlight ((t (:foreground ,fg-dim :background ,mode-line-dim))))
